@@ -19,7 +19,7 @@ body:
         - Staging
         - Dev
         - In the multiverse
-      default: Production    
+      default: 0    
     validations:
       required: true
       
