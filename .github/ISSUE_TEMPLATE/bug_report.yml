@@ -9,6 +9,20 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report 🤗
         Make sure there aren't any open/closed issues for this topic 😃
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Does it happens in production, in staging or in dev?
+      options:
+        - Production
+        - Staging
+        - Dev
+        - In the multiverse
+      default: 0
+    validations:
+      required: true
+      
         
   - type: textarea
     id: bug-description
