@@ -44,12 +44,13 @@ body:
 
   - type: checkboxes
     id: checklist
-    label: Checklist
-    description: You may select more than one.
-    options:
-      - label: I have searched for existing issues related to this feature request.
-      - label: I have checked the project documentation for any relevant information.
-      - label: I have discussed this feature with the team.
+    attributes:
+      label: Checklist
+      description: You may select more than one.
+      options:
+        - label: I have searched for existing issues related to this feature request.
+        - label: I have checked the project documentation for any relevant information.
+        - label: I have discussed this feature with the team.
     validations:
       required: true
 
