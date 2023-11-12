@@ -1,0 +1,63 @@
+name: New feature
+description: Ask for a new feature
+title: "[FEATURE]: "
+labels: ["Feature"]
+assignees: ["atournayre"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form will help you describe the new feature you want
+        It will help the team understand your need
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature you'd like
+      description: Provide a clear and concise description of the new feature or enhancement.
+    validations:
+      required: true
+      
+  - type: textarea
+    id: related-to-problem
+    attributes:
+      label: Is your feature request related to a problem? Please describe
+      description: A brief description of the problem or need that this feature aims to address.
+    validations:
+      required: false
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: If you have a specific solution or approach in mind, share it here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    label: Checklist
+    description: You may select more than one.
+    options:
+      - label: I have searched for existing issues related to this feature request.
+      - label: I have checked the project documentation for any relevant information.
+      - label: I have discussed this feature with the team.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      description: Include any other information or details that may be relevant to the feature request.
+    validations:
+      required: false
+
